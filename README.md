@@ -1,12 +1,26 @@
 
 # ExtendedAbstract
 
+English follows Japanese.
+
+このレポジトリは[mm-doshisha/ExtendedAbstract](https://github.com/mm-doshisha/ExtendedAbstract)のフォークです.
+🐛の修正と英語版を追加しています.
+
+## Overleaf
+
+このレポジトリのファイルを[Overleaf](https://www.overleaf.com)で開く手順を[このPDFファイル](./howto_overleaf.pdf)で説明しています.
+
+---
+
+## English version
+
 This is a fork of [mm-doshisha/ExtendedAbstract](https://github.com/mm-doshisha/ExtendedAbstract), with some fixes and an English version.
 
 ## Overleaf
 
 For using files inside this repository to write a resume with [Overleaf](https://www.overleaf.com), see [this pdf file](./howto_overleaf.pdf) for instructions.
 
+---
 
 From bellow, is the original README.
 # ExtendedAbstract
