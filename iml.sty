@@ -42,11 +42,11 @@
 \usepackage[
   hiresbb % accurate bounding box
 ]{graphicx}
-\setlength{\floatsep}{1truemm}			% space between figures
-\setlength{\textfloatsep}{1truemm}		% space between text and figure on top or bottom
-\setlength{\intextsep}{1truemm}			% space between text and inline figure
-\setlength{\abovecaptionskip}{1truemm}	% space between caption and figure
-\setlength{\belowcaptionskip}{2truemm}	% space between caption and text
+\setlength{\floatsep}{1truemm}          % space between figures
+\setlength{\textfloatsep}{1truemm}      % space between text and figure on top or bottom
+\setlength{\intextsep}{1truemm}         % space between text and inline figure
+\setlength{\abovecaptionskip}{1truemm}  % space between caption and figure
+\setlength{\belowcaptionskip}{2truemm}  % space between caption and text
 
 %%%% colors
 \usepackage[
@@ -99,20 +99,20 @@
 %%%% hyperlinks
 \if@isenglish
     \usepackage[
-      bookmarks=true,			% create bookmarks in pdf
-      bookmarksnumbered=true,	% use numbered bookmarks
-      colorlinks=false,		% disable colors
-      pdfborder={0 0 0},		% no border
-      pdfpagemode=UseNone,	% no thumbnails
+      bookmarks=true,         % create bookmarks in pdf
+      bookmarksnumbered=true, % use numbered bookmarks
+      colorlinks=false,       % disable colors
+      pdfborder={0 0 0},      % no border
+      pdfpagemode=UseNone,    % no thumbnails
     ]{hyperref}
 \else
     \usepackage[
-      bookmarks=true,			% create bookmarks in pdf
-      bookmarksnumbered=true,	% use numbered bookmarks
-      colorlinks=false,		% disable colors
-      pdfborder={0 0 0},		% no border
-      pdfpagemode=UseNone,	% no thumbnails
-      unicode=false			% disable unicode. (JPN only)
+      bookmarks=true,         % create bookmarks in pdf
+      bookmarksnumbered=true, % use numbered bookmarks
+      colorlinks=false,       % disable colors
+      pdfborder={0 0 0},      % no border
+      pdfpagemode=UseNone,    % no thumbnails
+      unicode=false           % disable unicode. (JPN only)
     ]{hyperref}
     \usepackage{pxjahyper} % for (u)pLaTeX + dvipdfmx + hyperref. (JPN only)
 \fi
@@ -120,7 +120,7 @@
 %%%% clever cross reference
 \if@issmartref
     \usepackage[
-      nameinlink,	% whole text as hyperlink
+      nameinlink, % whole text as hyperlink
       capitalize  % section -> Section, table -> Table
     ]{cleveref}
 
@@ -135,8 +135,8 @@
         \crefname{appendix}{付録}{付録} % (JPN only)
     \fi
 
-    \newcommand{\crefpairconjunction}{,~}	% "and" to ", "
-    \newcommand{\crefrangeconjunction}{--}	% "to" to "-"
+    \newcommand{\crefpairconjunction}{,~}  % "and" to ", "
+    \newcommand{\crefrangeconjunction}{--} % "to" to "-"
 
     \usepackage{letltxmacro} % replace existing commands safely
     \AtBeginDocument{
@@ -148,7 +148,7 @@
 
 %%%% citation
 \usepackage[
-  numbers,	  % citations as numbers
+  numbers,      % citations as numbers
   sort&compress % sort and compress. [3,1,2] -> [1-3]
 ]{natbib}
 
@@ -182,26 +182,26 @@
 
 %%%% title design
 \renewcommand{\maketitle}{%
-	\twocolumn[
-	\null \vspace{-1.5em}%
-	\begin{center}%
-		\let\footnote\thanks
-		{\LARGE \@title \par}%
-		\vskip .5em%
-		{\large
-			\lineskip .5em%
-			\begin{tabular}[t]{c}%
-				\@author
-			\end{tabular}\par}%
-	\end{center}%
-	\par\vskip 0em
-	]
+    \twocolumn[
+    \null \vspace{-1.5em}%
+    \begin{center}%
+        \let\footnote\thanks
+        {\LARGE \@title \par}%
+        \vskip .5em%
+        {\large
+        \lineskip .5em%
+        \begin{tabular}[t]{c}%
+            \@author
+        \end{tabular}\par}%
+    \end{center}%
+    \par\vskip 0em
+    ]
 }
 
 \makeatletter
 \g@addto@macro\normalsize{%
-	\setlength{\abovedisplayskip}{-1truemm}	% 式の上の余白
-	\setlength{\belowdisplayskip}{-1truemm}	% 式の下の余白
+  \setlength{\abovedisplayskip}{-1truemm} % 式の上の余白
+  \setlength{\belowdisplayskip}{-1truemm} % 式の下の余白
 }
 \makeatother
 
